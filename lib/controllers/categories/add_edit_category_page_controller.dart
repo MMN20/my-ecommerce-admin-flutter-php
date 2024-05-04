@@ -69,7 +69,6 @@ class AddEditCategoryPageController extends GetxController {
     if (file != null) {
       image = File(file.path);
       Get.back();
-      print(image!.path);
       update();
     }
   }

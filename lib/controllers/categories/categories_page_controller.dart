@@ -19,7 +19,6 @@ class CategoriesPageController extends GetxController {
     if (requestStatus == RequestStatus.success) {
       if (response['status'] == 'success') {
         List responseData = response['data'];
-        print(responseData);
         categories =
             responseData.map((e) => CategoryModel.fromJson(e)).toList();
       } else {

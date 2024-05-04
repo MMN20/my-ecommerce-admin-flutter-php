@@ -20,7 +20,6 @@ class AddEditSubCategoryPageController extends GetxController {
   void setCurrentMode() {
     SubCategoryModel? category = Get.arguments['subcategoryModel'];
     categoryModel = Get.arguments['categoryModel'];
-    print(categoryModel.catId);
     if (category != null) {
       isAdd = false;
       subcategoryModel = category;
@@ -67,7 +66,6 @@ class AddEditSubCategoryPageController extends GetxController {
         descController.text,
       );
       requestStatus = hanldeRequestData(response);
-      print(response);
       if (requestStatus == RequestStatus.success) {
         if (response['status'] == 'success') {
           subcategoryModel.subcatName = nameController.text;

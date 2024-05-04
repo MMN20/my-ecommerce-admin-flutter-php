@@ -1,4 +1,4 @@
-# MyEcommerce_user
+# MyEcommerce_admin
 
 #### This app is part 2/4, it is meants for the admin, There are also the Delivery, [User](https://github.com/MMN20/my-ecommerce-user-flutter-php) and Backend (PHP) parts in my Github account repositories 
 

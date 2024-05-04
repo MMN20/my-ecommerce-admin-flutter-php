@@ -24,12 +24,8 @@ class SubCategoriesPageController extends GetxController {
     if (requestStatus == RequestStatus.success) {
       if (response['status'] == 'success') {
         List responseData = response['data'];
-        print(responseData);
         subCategories =
             responseData.map((e) => SubCategoryModel.fromJson(e)).toList();
-        // for (var s in subCategories) {
-        //   print(s.catId);
-        // }
       } else {
         requestStatus = RequestStatus.empty;
       }
